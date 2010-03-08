@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_URI} !.*\/robots.txt$
+RewriteCond %{REQUEST_URI} !.*\/favicon.ico$
+RewriteRule !static\/.+\.(js|ico|gif|jpg|png|css|swf|php|htm|html)$ index.php
+
